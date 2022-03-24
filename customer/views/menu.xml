@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <menuitem id="menu_promotions" name="Promotions Manager"/>
+        <menuitem id="menu_management" name="Management" parent="menu_promotions" />
+        <menuitem id="menu_promotions2" name="Promotions Manager " parent="menu_management" action="action_promotions"/>
+        <menuitem id="menu_customer" name="Customer Manager" parent="menu_management" action="action_customer"/>
+        <menuitem id="menu_loyalty_history" name="History Manager" parent="menu_management" action="action_loyalty_history" sequence="1"/>
+        <menuitem id="menu_partner_levels" name="Menu Levels" parent="menu_configuration" action="action_partner_levels"/>
+        <menuitem id="menu_configuration" name="Configuration" parent="menu_promotions2" />
+        <menuitem id="menu_res_config_setting" name="settings" parent="menu_configuration" action="action_res_config_setting"/>
+
+    </data>
+</odoo>
